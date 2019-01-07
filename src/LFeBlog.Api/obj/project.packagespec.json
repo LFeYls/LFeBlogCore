@@ -1,0 +1,56 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "G:\\杨旭\\ASP.NET Core 2.1 + Ng6 实战\\LFeBlogCore\\src\\LFeBlog.Api\\LFeBlog.Api.csproj",
+    "projectName": "LFeBlog.Api",
+    "projectPath": "G:\\杨旭\\ASP.NET Core 2.1 + Ng6 实战\\LFeBlogCore\\src\\LFeBlog.Api\\LFeBlog.Api.csproj",
+    "outputPath": "G:\\杨旭\\ASP.NET Core 2.1 + Ng6 实战\\LFeBlogCore\\src\\LFeBlog.Api\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "G:\\杨旭\\ASP.NET Core 2.1 + Ng6 实战\\LFeBlogCore\\src\\LFeBlog.Core\\LFeBlog.Core.csproj": {
+            "projectPath": "G:\\杨旭\\ASP.NET Core 2.1 + Ng6 实战\\LFeBlogCore\\src\\LFeBlog.Core\\LFeBlog.Core.csproj"
+          },
+          "G:\\杨旭\\ASP.NET Core 2.1 + Ng6 实战\\LFeBlogCore\\src\\LFeBlog.Infrastructure\\LFeBlog.Infrastructure.csproj": {
+            "projectPath": "G:\\杨旭\\ASP.NET Core 2.1 + Ng6 实战\\LFeBlogCore\\src\\LFeBlog.Infrastructure\\LFeBlog.Infrastructure.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Microsoft.AspNetCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.1, )",
+          "autoReferenced": true
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
