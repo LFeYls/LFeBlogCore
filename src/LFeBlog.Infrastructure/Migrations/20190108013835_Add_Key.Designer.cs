@@ -4,14 +4,16 @@ using LFeBlog.Infrastructure.Databases;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LFeBlog.Infrastructure.Migrations
 {
     [DbContext(typeof(BlogContext))]
-    partial class BlogContextModelSnapshot : ModelSnapshot
+    [Migration("20190108013835_Add_Key")]
+    partial class Add_Key
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,8 +32,6 @@ namespace LFeBlog.Infrastructure.Migrations
                     b.Property<string>("Body");
 
                     b.Property<DateTime>("LastModifiedTime");
-
-                    b.Property<string>("Remark");
 
                     b.Property<string>("Title");
 

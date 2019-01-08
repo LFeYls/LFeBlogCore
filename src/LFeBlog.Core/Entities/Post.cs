@@ -10,5 +10,7 @@ namespace LFeBlog.Core.Entities
         public string Body { get; set; }
         public string Author { get; set; }
         public DateTime LastModifiedTime { get; set; }
+        
+        public string Remark { get; set; }
     }
 }
