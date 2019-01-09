@@ -5,7 +5,7 @@ using LFeBlog.Core.Interfaces;
 namespace LFeBlog.Infrastructure.Services
 {
     public class PropertyMapping<TSource,TDestination>:IPropertyMapping
-    where TSource:IEntity
+    where TDestination:IEntity
     {
         public Dictionary<string,List<MappedProperty>> MappingDictionary { get; set; }
 

@@ -33,6 +33,10 @@
   "frameworks": {
     "netcoreapp2.1": {
       "dependencies": {
+        "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+          "target": "Package",
+          "version": "[6.0.0, )"
+        },
         "Microsoft.AspNetCore.App": {
           "suppressParent": "All",
           "target": "Package",
@@ -44,6 +48,22 @@
           "target": "Package",
           "version": "[2.1.0, )",
           "autoReferenced": true
+        },
+        "Serilog": {
+          "target": "Package",
+          "version": "[2.7.2-dev-01033, )"
+        },
+        "Serilog.AspNetCore": {
+          "target": "Package",
+          "version": "[2.1.2-dev-00028, )"
+        },
+        "Serilog.Sinks.Console": {
+          "target": "Package",
+          "version": "[3.1.2-dev-00786, )"
+        },
+        "Serilog.Sinks.File": {
+          "target": "Package",
+          "version": "[4.0.1-dev-00801, )"
         }
       },
       "imports": [

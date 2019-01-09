@@ -59,6 +59,10 @@
           "target": "Package",
           "version": "[2.1.0, )",
           "autoReferenced": true
+        },
+        "System.Linq.Dynamic.Core": {
+          "target": "Package",
+          "version": "[1.0.9.1, )"
         }
       },
       "imports": [
