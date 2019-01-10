@@ -4,6 +4,6 @@ namespace LFeBlog.Core.IRepositories
 {
     public interface IUnitOfWork
     {
-        Task SaveChangeAsync();
+        Task<bool> SaveChangeAsync();
     }
 }

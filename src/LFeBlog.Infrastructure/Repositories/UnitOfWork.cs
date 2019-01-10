@@ -14,10 +14,10 @@ namespace LFeBlog.Infrastructure.Repositories
             _blogDbContext = blogDbContext;
         }
 
-        public async Task SaveChangeAsync()
+        public async Task<bool> SaveChangeAsync()
         {
 
-           await _blogDbContext.SaveChangesAsync();
+         return  await _blogDbContext.SaveChangesAsync()>0;
         }
     }
 }

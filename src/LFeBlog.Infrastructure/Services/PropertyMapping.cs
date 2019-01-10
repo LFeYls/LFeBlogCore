@@ -4,10 +4,10 @@ using LFeBlog.Core.Interfaces;
 
 namespace LFeBlog.Infrastructure.Services
 {
-    public class PropertyMapping<TSource,TDestination>:IPropertyMapping
+    public abstract class PropertyMapping<TSource,TDestination>:IPropertyMapping
     where TDestination:IEntity
     {
-        public Dictionary<string,List<MappedProperty>> MappingDictionary { get; set; }
+        public  Dictionary<string,List<MappedProperty>> MappingDictionary { get; set; }
 
         protected PropertyMapping(Dictionary<string,List<MappedProperty>> mappingDictionary)
         {
@@ -15,7 +15,7 @@ namespace LFeBlog.Infrastructure.Services
             
             mappingDictionary[nameof(IEntity.Id)]=new List<MappedProperty>
             {
-                new MappedProperty{Name = nameof(IEntity.Id),Revert = true}
+                new MappedProperty{Name = nameof(IEntity.Id),Revert = false}
             };
 
         }

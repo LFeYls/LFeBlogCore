@@ -26,7 +26,7 @@ namespace LFeBlog.Infrastructure.Repositories
         }
 
 
-        public async Task<IEnumerable<Post>> GetAllPostsAsync(PostParameters postParameters)
+        public async Task<PaginatedList<Post>> GetAllPostsAsync(PostParameters postParameters)
         {
             var query = _blogDbContext.Posts.AsQueryable();
 
