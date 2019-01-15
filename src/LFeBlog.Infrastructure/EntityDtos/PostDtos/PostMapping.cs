@@ -9,6 +9,7 @@ namespace LFeBlog.Infrastructure.EntityDtos.PostDtos
         {
             CreateMap<Post, PostDto>().ReverseMap();
 
+            CreateMap<CreateOrUpdatePostDto, Post>().ReverseMap();
 
         }
     }

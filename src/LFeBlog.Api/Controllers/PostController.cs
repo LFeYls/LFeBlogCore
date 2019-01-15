@@ -196,8 +196,15 @@ namespace LFeBlog.Web.Core.Controllers
             var newPost = _mapper.Map<CreateOrUpdatePostDto, Post>(createOrUpdatePostDto);
 
             newPost.LastModifiedTime = DateTime.Now;
+            if (createOrUpdatePostDto.Id.HasValue)
+            {
+                _postRepository.Update(newPost);
+            }
+            else
+            {
+                _postRepository.AddPost(newPost);
+            }
             
-            _postRepository.AddPost(newPost);
 
             if (!await _unitOfWork.SaveChangeAsync())
             {
@@ -275,6 +282,7 @@ namespace LFeBlog.Web.Core.Controllers
         }
 
 
+        [HttpPatch("{id}", Name = "PartiallyUpdatePost")]
         public async Task<IActionResult> PartiallyUpdateCityForCountry(int id,
             [FromBody] JsonPatchDocument<CreateOrUpdatePostDto> patchDto)
         {

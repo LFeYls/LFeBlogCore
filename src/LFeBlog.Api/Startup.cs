@@ -62,7 +62,7 @@ namespace LFeBlog.Web.Core
                 var outputFormatter = options.OutputFormatters.OfType<JsonOutputFormatter>().FirstOrDefault();
                 if (outputFormatter!=null)
                 {
-                    outputFormatter.SupportedMediaTypes.Add("application/jsonvnd.cgzl.hateoas+json");
+                    outputFormatter.SupportedMediaTypes.Add("application/vnd.cgzl.hateoas+json");
                 }
             })
                 .AddJsonOptions(options =>

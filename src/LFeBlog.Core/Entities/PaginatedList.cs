@@ -20,7 +20,7 @@ namespace LFeBlog.Core.Entities
 
         public int PageCount => TotalItemsCount / PageSize + (TotalItemsCount % PageSize > 0 ? 1 : 0);
 
-        public bool HasPrevious => PageIndex > 1;
+        public bool HasPrevious => PageIndex > 0;
 
         public bool HasNextPage => PageIndex < PageCount - 1;
 
