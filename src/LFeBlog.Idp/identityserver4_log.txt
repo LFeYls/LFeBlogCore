@@ -1,0 +1,50 @@
+2019-01-15 17:30:18.580 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-01-15 17:30:18.646 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-01-15 17:30:18.651 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-01-15 17:30:18.651 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-01-15 17:30:18.654 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-01-15 17:30:18.657 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-01-15 17:30:18.659 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-01-16 10:06:21.379 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-01-16 10:06:21.426 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-01-16 10:06:21.428 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-01-16 10:06:21.429 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-01-16 10:06:21.429 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-01-16 10:06:21.430 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-01-16 10:06:21.430 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-01-16 10:06:25.246 +08:00 [DBG] Login Url: /Account/Login
+2019-01-16 10:06:25.250 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-01-16 10:06:25.251 +08:00 [DBG] Logout Url: /Account/Logout
+2019-01-16 10:06:25.251 +08:00 [DBG] ConsentUrl Url: /consent
+2019-01-16 10:06:25.251 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-01-16 10:06:25.252 +08:00 [DBG] Error Url: /home/error
+2019-01-16 10:06:25.252 +08:00 [DBG] Error Id Parameter: errorId
+2019-01-16 17:20:32.475 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-01-16 17:20:32.514 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-01-16 17:20:32.517 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-01-16 17:20:32.518 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-01-16 17:20:32.518 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-01-16 17:20:32.519 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-01-16 17:20:32.520 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-01-16 17:25:50.574 +08:00 [DBG] Login Url: /Account/Login
+2019-01-16 17:25:50.577 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-01-16 17:25:50.577 +08:00 [DBG] Logout Url: /Account/Logout
+2019-01-16 17:25:50.578 +08:00 [DBG] ConsentUrl Url: /consent
+2019-01-16 17:25:50.578 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-01-16 17:25:50.578 +08:00 [DBG] Error Url: /home/error
+2019-01-16 17:25:50.579 +08:00 [DBG] Error Id Parameter: errorId
+2019-01-16 17:31:31.757 +08:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-01-16 17:31:43.441 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-01-16 17:31:44.619 +08:00 [DBG] Augmenting SignInContext
+2019-01-16 17:31:44.621 +08:00 [DBG] Adding idp claim with value: local
+2019-01-16 17:31:44.621 +08:00 [DBG] Adding amr claim with value: pwd
+2019-01-16 17:31:44.622 +08:00 [DBG] Adding auth_time claim with value: 1547631104
+2019-01-16 17:31:44.631 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-01-16 17:31:44.650 +08:00 [INF] {"Username":"alice","Provider":null,"ProviderUserId":null,"SubjectId":"08163d63-0af6-41f8-b6bb-75c6b0cdc726","DisplayName":"alice","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLJRIIDEPJP4:00000005","TimeStamp":"2019-01-16T09:31:44.0000000Z","ProcessId":4440,"LocalIpAddress":"::1:5001","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-01-16 17:32:01.858 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-01-16 17:32:01.875 +08:00 [DBG] Augmenting SignInContext
+2019-01-16 17:32:01.876 +08:00 [DBG] Adding idp claim with value: local
+2019-01-16 17:32:01.876 +08:00 [DBG] Adding amr claim with value: pwd
+2019-01-16 17:32:01.876 +08:00 [DBG] Adding auth_time claim with value: 1547631121
+2019-01-16 17:32:01.877 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-01-16 17:32:01.882 +08:00 [INF] {"Username":"alice","Provider":null,"ProviderUserId":null,"SubjectId":"08163d63-0af6-41f8-b6bb-75c6b0cdc726","DisplayName":"alice","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLJRIIDEPJP4:0000000A","TimeStamp":"2019-01-16T09:32:01.0000000Z","ProcessId":4440,"LocalIpAddress":"::1:5001","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}

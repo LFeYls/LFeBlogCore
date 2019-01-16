@@ -40,27 +40,27 @@ namespace LFeBlog.Idp
             return new[]
             {
                 // client credentials flow client
-                new Client
-                {
-                    ClientId = "mvcClient",
-                    ClientName = "MVX 客户端",
-
-                    AllowedGrantTypes = GrantTypes.ClientCredentials,
-                    ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
-
-                    RedirectUris = {"https://localhost:7001/singin-oidc"},
-                    FrontChannelLogoutUri = "https://localhost:7001/singout-oidc",
-                    PostLogoutRedirectUris = {"https://localhost:7001/singout-callback-oidc"},
-                    AllowOfflineAccess = true,
-                    AllowedScopes =
-                    {
-                        
-                        IdentityServerConstants.StandardScopes.OpenId,
-                        IdentityServerConstants.StandardScopes.Profile,
-                        IdentityServerConstants.StandardScopes.Email,
-                        "restapi"
-                    }
-                },
+//                new Client
+//                {
+//                    ClientId = "mvcClient",
+//                    ClientName = "MVX 客户端",
+//
+//                    AllowedGrantTypes = GrantTypes.ClientCredentials,
+//                    ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
+//
+//                    RedirectUris = {"https://localhost:7001/singin-oidc"},
+//                    FrontChannelLogoutUri = "https://localhost:7001/singout-oidc",
+//                    PostLogoutRedirectUris = {"https://localhost:7001/singout-callback-oidc"},
+//                    AllowOfflineAccess = true,
+//                    AllowedScopes =
+//                    {
+//                        
+//                        IdentityServerConstants.StandardScopes.OpenId,
+//                        IdentityServerConstants.StandardScopes.Profile,
+//                        IdentityServerConstants.StandardScopes.Email,
+//                        "restapi"
+//                    }
+//                },
 
                 // MVC client using hybrid flow
                 new Client

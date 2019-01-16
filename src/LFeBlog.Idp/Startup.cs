@@ -81,11 +81,6 @@ namespace LFeBlog.Idp
                 options.MaxAge = TimeSpan.FromDays(60);
             });
 
-            services.AddHttpsRedirection(options =>
-            {
-                options.RedirectStatusCode = StatusCodes.Status307TemporaryRedirect;
-                options.HttpsPort = 5001;
-            });
             services.AddCors(options =>
             {
                 options.AddPolicy("AngularDev", policy =>
@@ -111,7 +106,6 @@ namespace LFeBlog.Idp
             }
 
             app.UseCors();
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseIdentityServer();
             app.UseMvcWithDefaultRoute();
